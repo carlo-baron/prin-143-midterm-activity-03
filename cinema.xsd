@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="https://www.example.com"
+  xmlns="https://www.example.com"
+  elementFormDefault="qualified"
+>
+  <xs:element name="cinema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="open" type="xs:time" />
+        <xs:element name="close" type="xs:time" />
+        <xs:element name='movies'>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="movie" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="duration" type="xs:duration" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
