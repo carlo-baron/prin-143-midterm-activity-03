@@ -1,5 +1,14 @@
-# prin-143-midterm-activity-03
+# Activity 3 For You
 
-## Activity 3
+## XSD's
 
-Test push
+- bank
+- cinema
+- politician
+- retail
+- university
+
+## Teammates
+
+- Jai
+- Bella
